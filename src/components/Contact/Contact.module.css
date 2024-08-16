@@ -1,0 +1,107 @@
+.maindivision{
+    
+    background-color: rgba(255, 255, 255, 0.116);
+    margin:20px auto auto auto;    
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 50px 80px 10px 80px;
+}
+
+
+.contact{
+    text-align: right;
+    padding: 20px;
+    
+    border-right: solid #000 10px ;
+    border-radius: 5px;
+    font-weight: bold;   
+}
+.header{
+    color: #ffff;
+    padding: 10px 0;
+}
+.info{
+    display: inline-grid;
+    grid-template-columns: auto 50px;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+}
+.info p{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) , rgb(255, 255, 255));
+    padding: 5px;
+    border-radius: 50px;
+    padding-right: 10px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.icon{
+    background-color: #ffffff;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 50%;
+    
+}
+.socials{
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;  
+}
+.mail{
+    padding: 5px 0;
+    background-color:#134B70;
+    color: #ffffff;
+    border-radius: 20px;
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    margin-right: 20px;
+}
+.mail p{
+    padding: 10px;
+    
+}
+.mail div{
+    margin: 5px;
+    padding: 8px;
+}
+.waIcon{
+    padding: 10px 0;
+    background-color:#134B70;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-grid;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    align-content: center;
+    justify-content: center;
+}
+.links{
+    display: grid;
+    grid-template-columns: 50px 50px ;
+    padding:12px 0;
+}
+
+footer{
+    display: grid;
+    padding-bottom: 20px;
+    justify-items: center;
+}
+@media only screen and (max-width:481px){
+    .card{
+        grid-template-columns: auto;
+        padding: 5px;
+    }
+    .info p{
+        padding-left: 30px;
+    }
+    .links{
+        /* height: 50px; */
+        grid-template-columns: 50px 50px 50px 50px 50px;
+    }
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Montserrat:wght@100..900&display=swap');
+
+
+.maindivision{
+    
+    background-color: rgba(255, 255, 255, 0.116);
+    height: 80vh;
+    width: 90vw;
+    margin:20px auto auto auto;
+    
+    display: grid;
+    
+    
+
+    font-family: 'Montserrat';
+}
+
+
+.img {
+    display: inline-block;
+    overflow: hidden    ;
+    padding:25px ;
+}
+.imgContainer{
+    object-fit: contain;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: right;
+}
+.img img {
+    object-fit: contain;
+    height: 100%;
+    padding: 10px;
+    border: solid 2px;
+    border-color: #ffffff41;
+    border-radius: 25px;
+}
+
+.card{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+} 
+
+.name{
+    font-family:"Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #ffff;
+    margin-top: 10px;
+}
+
+.about{
+    text-align: justify;
+    color: black;
+    font-weight:600;
+    font-family:  ,Times, serif;
+    margin-top: 20px;
+    
+}
+.place{
+    text-align: center;
+}
+@media  screen and (max-width:481px) {
+    .maindivision{
+        height: auto;
+        grid-template-rows: auto auto;
+    }
+    .maxWidthImg{
+        display: none;
+    }
+    .imgContainer{
+        justify-content: center;
+    }
+    .img img{
+        height: 300px;
+        border-radius: 50%;
+        
+    }
+    .card{
+        padding-right: auto;
+        text-align: center;
+        padding-bottom: 100px;
+        
+    }
+    .about{
+        line-height: 25px;
+    }
+}
+
+@media  screen and (min-width:481px) {
+    .maindivision{
+        grid-template-columns: 1fr 1fr;
+        grid-row: 2/span 2;
+    }
+    .maxWidthImg{
+        display: none;
+    }
+    .card{
+        padding-right: 20%;
+    }
+}

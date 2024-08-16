@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Montserrat:wght@100..900&display=swap');
+
+
+.maindivision{
+    
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.116);
+    height: 80vh;
+    width: 90vw;
+    margin:20px auto auto auto;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    position: relative;
+
+    font-family: 'Montserrat';
+}
+
+.header{
+    position: relative;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffff;
+
+}
+.slider{
+    width: 90%;
+    height: 70vh ;
+    
+    position: absolute;
+    left: 5%;
+    top: 10vh;
+    padding: 20px;
+
+    display: grid;
+
+    
+}
+
+
+
+.card{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    background-color: #201E43;
+    color: #EEEEEE;
+    border-color: rgba(0, 0, 0, 0.329);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    text-align:center;
+
+}
+@media  screen and (min-width:481px) {
+    .card{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.img{
+    grid-row: 1 / span 4;
+    width: 35vw;
+}
+@media  screen and (max-width:481px) {
+    .card{
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 4fr 1fr 1fr 1fr 1fr; */
+    }
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+}
+.next, .prev{
+    background-color: rgba(255, 255, 255, 0.096);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.git,.visit {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100px;
+    background-color: #EEEEEE;
+    color: #201E43;
+    font-weight: bold;
+    padding: 5px;
+    border: solid;
+    border-radius: 10px;
+}
+.git svg{
+    padding-right: 5px;
+}
+.visit svg{
+    padding-right: 5px;
+}
+.links svg{
+    background: none;
+    
+}
+.links :hover{
+    background-color: #eeeeeed8;
+}
+
+@media  screen and (min-width:481px) {
+    .slider{
+        grid-template-columns: 40px auto 40px;
+    }
+    
+}
+@media  screen and (max-width:481px) {
+    .card{
+        grid-column: 1 /span 2;
+    }
+    .slider{
+        grid-template-rows: auto 40px;
+    }
+    .prev{
+        order: 1;
+    }
+    .next{
+        order: 2;
+    }
+}
